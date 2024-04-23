@@ -1,0 +1,70 @@
+:root {
+  --cor-primaria: #1F2544; /* Cor primária */
+  --cor-secundaria: #FFD0EC; /* Cor secundária */
+  --cor-terciaria: #81689D; /* Cor terciária */
+  --cor-hover: #474F7A; /* Cor de hover */
+}
+
+body {
+  background-color: var(--cor-primaria); /* Cor de fundo */
+  color: var(--cor-secundaria); /* Cor do texto */
+  font-family: Arial, sans-serif; /* Fonte para uma melhor legibilidade */
+  margin: 0; /* Remova as margens padrão */
+  padding: 0; /* Remova o preenchimento padrão */
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Empilhe os elementos verticalmente em telas menores */
+  align-items: center; /* Centralize os elementos horizontalmente */
+  padding: 20px;
+}
+
+.input-section, .output-section {
+  width: 100%; /* Preencha a largura do contêiner */
+  max-width: 400px; /* Defina uma largura máxima para evitar que o conteúdo se espalhe demais em telas grandes */
+  padding: 20px;
+  border: 1px solid var(--cor-terciaria);
+  border-radius: 5px;
+  margin-bottom: 20px; /* Adicione um espaço entre as seções */
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  resize: vertical; /* Permita que o usuário redimensione verticalmente o textarea */
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: var(--cor-terciaria);
+  color: var(--cor-secundaria);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--cor-hover);
+}
+
+#resultado {
+  min-height: 100px;
+  border: 1px solid var(--cor-terciaria);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-secundaria);
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
